@@ -31,3 +31,6 @@ code {
 .rotate-y:hover {
   transform: rotateY(180deg);
 }
+.custom-shadow {
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); /* Adjust the rgba color for darkness */
+}

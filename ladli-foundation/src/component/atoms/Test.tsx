@@ -3,50 +3,28 @@ import { BsArrowRight } from "react-icons/bs";
 import image003 from "./../../assests/images/images003.jpg";
 import ATMEventMediaSynopsis from "./ATMEventMediaSynopsis/ATMEventMediaSynopsis";
 import ATMEventSummery from "./ATMEventSummery/ATMEventSummery";
-import ATMFlippableCard from "./ATMFlippableCard/ATMFlippableCard";
-import AmitShahImage from './../../assests/images/amit-shah.jpg'
-type Props = {
 
-};
+import TestimonialCardWrapper from "../ui/TestimonialCard/TestimonialCardWrapper";
+type Props = {};
 
 const Test = (props: Props) => {
     return (
         <div className="">
-            <ATMFlippableCard
-                children1={
-                    <>
-                        <div className="p-3  shadow-lg text-center">
-                            <img src={AmitShahImage} alt="" />
-                            <h1 className="font-medium text-black ">Mr. Amit Shah</h1>
-                            <p className="text-gray-600 text-[12px] font-medium" >Home Minister of India ( 2019 - till Date)</p>
-                        </div>
-                    </>
-                }
-                children2={<>
-                    <div className="shadow-lg  " >The Ladli Foundation's dedication to providing a brighter future for orphaned females is not only
-                        commendable but also a source of inspiration for everyone fortunate enough to witness your efforts.
-                        Organizing The Mass Marriages Events for destitute females can provide social security which stands
-                        as a remarkable example of your unwavering commitment to our society. I would like to extend my
-                        heartfelt gratitude to the Ladli Foundation for your dedication to the betterment of our society.
-                        as a remarkable example of your unwavering commitment to our society. I would like to extend my
-                        heartfelt gratitude to the Ladli Foundation for your dedication to the betterment of our society.
-                    </div>
-                </>}
-            />
-
+            <TestimonialCardWrapper />
             <div className="mt-20">
                 <ATMEventSummery image1={image003} image2={image003}>
                     <div className=" text-[16px] text-gray-500 pt-1">
                         He has been honoured with two national award by the Government of
-                        India and has been praised by four successive Presidents of India late
-                        Sh. APJ Abdul Kalam, Late. Sh. Pranab Mukharjee, Sh. Ram Nath Kovind &
-                        Smt. Draupadi Murmu, respectively.
+                        India and has been praised by four successive Presidents of India
+                        late Sh. APJ Abdul Kalam, Late. Sh. Pranab Mukharjee, Sh. Ram Nath
+                        Kovind & Smt. Draupadi Murmu, respectively.
                     </div>
                     <div className="text-gray-700 text-[16px] font-medium py-6">
-                        Presently he is working to address most pressing social issues for the
-                        advancement of Hon’ble Prime Minister’ Initiatives for sustainable
-                        development in India by managing the force of over 1 Lac Youth Interns
-                        & Volunteers through his innovative Social Internship Program.
+                        Presently he is working to address most pressing social issues for
+                        the advancement of Hon’ble Prime Minister’ Initiatives for
+                        sustainable development in India by managing the force of over 1 Lac
+                        Youth Interns & Volunteers through his innovative Social Internship
+                        Program.
                     </div>
                     <div className="text-gray-700 text-[16px] font-medium">
                         Under his visionary leadership and successful community engagement,
@@ -57,10 +35,10 @@ const Test = (props: Props) => {
                         approximately INR 600 Crore (equivalent to 75 million USD).
                         Remarkably, all these achievements have been realized independently,
                         without relying on external financial assistance or grants.
-                        Additionally, as the Exclusive NGO Partner of the Government of Delhi,
-                        the organization is actively implementing its innovative solutions to
-                        combat malnutrition among 800,000 marginalized students, forging a
-                        sustainable path towards positive change
+                        Additionally, as the Exclusive NGO Partner of the Government of
+                        Delhi, the organization is actively implementing its innovative
+                        solutions to combat malnutrition among 800,000 marginalized
+                        students, forging a sustainable path towards positive change
                     </div>
                 </ATMEventSummery>
             </div>

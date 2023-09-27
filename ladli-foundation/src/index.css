@@ -18,6 +18,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+<<<<<<< HEAD
 /* Flipable card */
 .transform-style-preserve-3d {
   transform-style: preserve-3d;
@@ -34,3 +35,26 @@ code {
 .custom-shadow {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); /* Adjust the rgba color for darkness */
 }
+=======
+.pulse {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform: scale(1);
+  box-shadow: 5em 0 0.5em transparent;
+}
+.pulse:hover, 
+.pulse:focus {
+  transform: scale(1.1);
+  animation: pulse-out 0.50s ease-in-out;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes pulse-out {
+  
+  0% {
+  box-shadow: 0 0 0 0 #ef6eae;
+   }
+  }
+  
+
+
+>>>>>>> 38c648c0e43f6750a43afa2b67abb5b32e1fb4a2

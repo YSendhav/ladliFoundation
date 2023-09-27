@@ -3,13 +3,15 @@ import { BsArrowRight } from "react-icons/bs";
 import image003 from "./../../assests/images/images003.jpg";
 import ATMEventMediaSynopsis from "./ATMEventMediaSynopsis/ATMEventMediaSynopsis";
 import ATMEventSummery from "./ATMEventSummery/ATMEventSummery";
-
 import TestimonialCardWrapper from "../ui/TestimonialCard/TestimonialCardWrapper";
+import Header from "../ui/Header";
+import ATMOverlayCard from "./ATMOverlayCard/ATMOverlayCard";
 type Props = {};
 
 const Test = (props: Props) => {
     return (
         <div className="">
+            <Header />
             <TestimonialCardWrapper />
             <div className="mt-20">
                 <ATMEventSummery image1={image003} image2={image003}>

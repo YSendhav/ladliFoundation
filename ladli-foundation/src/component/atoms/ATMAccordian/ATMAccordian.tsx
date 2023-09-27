@@ -31,7 +31,7 @@ const ATMAccordian: React.FC<AccordionProps> = ({ title, children,className ,tit
         {title}
          <span><TiArrowSortedDown/></span> 
       </div>
-    <div className=' relative  duration-300 ease-in-out' ><div className={twMerge(`  bg-white rounded-lg shadow-lg border border-gray-300 absolute  z-1000 bg:green-500   ${className}`)}>{children} </div></div>
+    <div className=' relative  duration-300 ease-in-out' ><div className={twMerge(`  bg-white  shadow-lg border border-gray-300 absolute transform origin-top left-5 -translate-x-1/4   transition-transform duration-300 ease-in-out z-1000 ${className}`)}>{children} </div></div>
       </div>
     </div>
   );

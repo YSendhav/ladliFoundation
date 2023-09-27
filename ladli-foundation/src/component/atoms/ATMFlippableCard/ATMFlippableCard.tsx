@@ -15,7 +15,7 @@ const ATMFlippableCard = ({
 }: Props) => {
     return (
         <>
-            <div className="relative w-[300px] h-[300px] ">
+            <div className="relative w-[300px] h-[300px]  ">
                 <div className="absolute w-full h-full transform-style-preserve-3d  transition-all duration-700 ease rotate-y">
                     <div
                         className={`w-full h-full absolute backface-visibility  text-white ${extraClass1}`}
@@ -23,7 +23,7 @@ const ATMFlippableCard = ({
                         {children1}{" "}
                     </div>
                     <div
-                        className={`w-full h-full absolute backface-visibility bg-blue-300 text-white rotate-y-scal ${extraClass2}`}
+                        className={`w-full h-full absolute backface-visibility overflow-auto rotate-y-scal ${extraClass2}`}
                     >
                         {children2}
                     </div>

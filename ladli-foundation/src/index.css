@@ -82,3 +82,43 @@ code {
 .main_container:hover .overlay {
   height: 96%;
 }
+.content-banner--left {
+  float: left;
+  background: #fde8f3;
+  color: #750a42;
+  z-index: 000;
+}
+.content-banner {
+  background: #f7fafe;
+  width: 70vw;
+  padding: 5rem;
+  margin-top: 4rem;
+  border-radius: 100px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+}
+.content-banner--left__image--3 {
+  top: 15rem;
+  right: 10rem;
+}
+.content-banner--left__image {
+  width: 10rem;
+  position: absolute;
+  border-radius: 8rem;
+  border: 2px solid #fff;
+  z-index: -999;
+  opacity: 0;
+}
+.content-banner--left__image--2 {
+  top: 10rem;
+  right: 10rem;
+}
+.content-banner--left__image--1 {
+  top: 5rem;
+  right: 10rem;
+}
+.container__content-banner--aboutus:first-child {
+  height: 30rem;
+}

@@ -5,13 +5,14 @@ import ATMEventMediaSynopsis from "./ATMEventMediaSynopsis/ATMEventMediaSynopsis
 import ATMEventSummery from "./ATMEventSummery/ATMEventSummery";
 import TestimonialCardWrapper from "../ui/TestimonialCard/TestimonialCardWrapper";
 import Header from "../ui/Header";
-import ATMOverlayCard from "./ATMOverlayCard/ATMOverlayCard";
+import ATMImageOverflow from "./ATMImageOverflow/ATMImageOverflow";
 type Props = {};
 
 const Test = (props: Props) => {
     return (
         <div className="">
             <Header />
+            <ATMImageOverflow />
             <TestimonialCardWrapper />
             <div className="mt-20">
                 <ATMEventSummery image1={image003} image2={image003}>

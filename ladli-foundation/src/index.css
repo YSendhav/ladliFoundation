@@ -87,6 +87,11 @@ code {
 .main_container:hover .overlay {
   height: 96%;
 }
+
+
+
+
+/* 
 .content-banner--left {
   float: left;
   background: #fde8f3;
@@ -126,4 +131,4 @@ code {
 }
 .container__content-banner--aboutus:first-child {
   height: 30rem;
-}
+} */

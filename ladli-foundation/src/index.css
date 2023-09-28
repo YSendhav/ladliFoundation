@@ -50,6 +50,11 @@ code {
     box-shadow: 0 0 0 0 #ef6eae;
   }
 }
+/* <<<<<<< HEAD */
+.margin-auto {
+  margin: auto;
+}
+/* ======= */
 .headerImage {
   background-image: linear-gradient(
       to right,

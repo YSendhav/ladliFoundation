@@ -19,7 +19,9 @@ const Impact = ({ impacts }: Props) => {
         </h1>
         <h3 className="text-[#405492] text-[17.5px] text-center sm:text-[20px] md:text-[22px] font-bold">
           Till Now We Have Directly Impacted{" "}
-           <CountUp end={2336000} duration={5} className="text-[#9CEBFF]" /> People
+           <CountUp end={2336000}  
+           enableScrollSpy= {true}
+           duration={5} className="text-[#9CEBFF]" /> People
         </h3>
 
        <div className="">
@@ -28,7 +30,7 @@ const Impact = ({ impacts }: Props) => {
             return <div className=" p-3  border-b sm:border-r sm:border-divider flex items-center ">
                 <div className="  border-gray-300 flex flex-col gap-5 items-center">
                   <div className="text-[#ea248f] font-bold text-[28px]">
-                    <CountUp end={impact?.count} duration={5} />
+                    <CountUp end={impact?.count} duration={5} enableScrollSpy= {true}/>
                   </div>
                   <div className="flex flex-col gap-1 items-center">
                     <h4 className="text-[15px] italic text-center font-medium">

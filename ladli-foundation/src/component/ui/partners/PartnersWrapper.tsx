@@ -41,6 +41,13 @@ import sevaSanskar from "../../../assests/images/partnersImages/international/se
 import shivKailashF from "../../../assests/images/partnersImages/international/shivKailashF.jpg"
 import stJohn from "../../../assests/images/partnersImages/international/stJohn.jpg"
 import unitedAgency from "../../../assests/images/partnersImages/international/unitedAgency.jpg"
+import Tarc from "../../../assests/images/partnersImages/corporates/Tarc.jpg"
+import asianpaints from "../../../assests/images/partnersImages/corporates/asianpaints.jpg"
+import fortis from "../../../assests/images/partnersImages/corporates/fortis.jpg"
+import indiaNews from "../../../assests/images/partnersImages/corporates/indiaNews.jpg"
+import jakson from "../../../assests/images/partnersImages/corporates/jakson.jpg"
+import makeEasy from "../../../assests/images/partnersImages/corporates/makeEasy.jpg"
+import ola from "../../../assests/images/partnersImages/corporates/ola.jpg"
 import unitedNations from "../../../assests/images/partnersImages/international/unitedNations.jpg"
 
 const psuParnters=[
@@ -52,11 +59,15 @@ const internationlPartners=[
     unitedNations,momentum,unitedAgency,habitatIndia,byjus,ashmita,catfit,WFI,
     NASSCOM,johnSnow,shivKailashF,stJohn,MSMEFoundation,sevaSanskar,saveChildBegger,iact,diadem,NYA
 ]
+const corporatesPartners=[
+  Tarc,asianpaints,fortis,indiaNews,jakson,ola,makeEasy
+]
 const PartnersWrapper = () => {
   return (
     <div>
        <Partners psuImages={psuParnters}
        internationalPartners={internationlPartners}
+       corporatesPartners={corporatesPartners}
        />
     </div>
   )

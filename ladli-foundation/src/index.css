@@ -50,11 +50,9 @@ code {
     box-shadow: 0 0 0 0 #ef6eae;
   }
 }
-<<<<<<< HEAD
 .margin-auto{
   margin: auto;
 }
-=======
 .headerImage {
   background-image: linear-gradient(
       to right,
@@ -87,4 +85,3 @@ code {
 .main_container:hover .overlay {
   height: 96%;
 }
->>>>>>> 03b311d3648adb98c37fb421756020cce9a1fe1d

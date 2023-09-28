@@ -83,52 +83,63 @@ code {
   height: 0;
   transition: 0.75s ease;
   opacity: 2px;
+  transition: right 0.3s ease-out;
 }
 .main_container:hover .overlay {
   height: 96%;
 }
-
-
-
-
-/* 
-.content-banner--left {
-  float: left;
-  background: #fde8f3;
-  color: #750a42;
-  z-index: 000;
-}
-.content-banner {
-  background: #f7fafe;
-  width: 70vw;
-  padding: 5rem;
-  margin-top: 4rem;
-  border-radius: 100px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
-  transition: all 0.5s;
-  cursor: pointer;
+/* /overflow card css */
+/* .main {
+  transition: transform 0.8s;
   position: absolute;
-}
-.content-banner--left__image--3 {
-  top: 15rem;
-  right: 10rem;
-}
-.content-banner--left__image {
-  width: 10rem;
-  position: absolute;
-  border-radius: 8rem;
-  border: 2px solid #fff;
-  z-index: -999;
-  opacity: 0;
-}
-.content-banner--left__image--2 {
-  top: 10rem;
-  right: 10rem;
-}
-.content-banner--left__image--1 {
-  top: 5rem;
-  right: 10rem;
-}
-.container__content-banner--aboutus:first-child {
-  height: 30rem;
 } */
+
+.main:hover .overflow {
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+  /* transition: transform 0.8s; */
+  left: 70%;
+}
+.overflow {
+  position: absolute;
+  left: 65%;
+  /* height: 100px; */
+  overflow: hidden;
+  display: inline-block;
+  top: -50px;
+  transition: all 1.3s;
+  opacity: 100px;
+  &:hover {
+    /* transform: scale(2); */
+    transform: scale(0.5);
+  }
+}
+/* .main:hover & {
+  transform: scale(1.4);
+} */
+
+/* //dommy */
+
+.square1 {
+  background: #00aa9d;
+  border-radius: 3px;
+  height: 150px;
+  margin: 100px;
+  position: absolute;
+  transition: transform 0.8s;
+  width: 150px;
+}
+
+.square2 {
+  background: #2b3f53;
+  border-radius: 3px;
+  height: 100px;
+  margin: 100px;
+  transition: transform 0.8s;
+  position: absolute;
+  width: 100px;
+  &:hover {
+    transform: translate(20px, 20px);
+  }
+}

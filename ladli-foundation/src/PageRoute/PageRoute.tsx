@@ -9,7 +9,7 @@ const PageRoute = (props: Props) => {
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path='/test' element={<ImpactWrapper />} />
+                    <Route path='/test' element={<Test />} />
                 </Routes>
             </BrowserRouter>
         </>

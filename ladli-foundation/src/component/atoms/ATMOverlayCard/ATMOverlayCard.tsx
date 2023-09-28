@@ -11,7 +11,7 @@ type Props = {
 
 const ATMOverlayCard = ({ image, name, position, place, description }: Props) => {
     return (
-        <div className="mx-[100px]">
+        <div className="">
             <div className="w-[330px]  relative rounded-md main_container">
                 <div className="flex flex-col items-center justify-center text-center shadow-lg p-4 ">
                     <div>

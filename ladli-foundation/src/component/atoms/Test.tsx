@@ -13,7 +13,7 @@ const Test = (props: Props) => {
         <div className="">
             <Header />
             <ATMImageOverflow />
-            <TestimonialCardWrapper />
+            {/* <TestimonialCardWrapper />
             <div className="mt-20">
                 <ATMEventSummery image1={image003} image2={image003}>
                     <div className=" text-[16px] text-gray-500 pt-1">
@@ -77,7 +77,7 @@ const Test = (props: Props) => {
                         </span>
                     </button>
                 </div>
-            </ATMEventMediaSynopsis>
+            </ATMEventMediaSynopsis> */}
         </div>
     );
 };

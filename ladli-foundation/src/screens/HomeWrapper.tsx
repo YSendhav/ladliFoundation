@@ -20,7 +20,7 @@ const glimpsesImage=[glimpses1 ,glimpses2,glimpses3,glimpses4,glimpses5,glimpses
 
 const HomeWrapper = (props: Props) => {
   return (
-    <div>
+    <div className='w-full h-full'>
         <Home 
         glimpses={glimpsesImage}
         />

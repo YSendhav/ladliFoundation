@@ -20,7 +20,7 @@ type Props = {
 const Home = ({ glimpses }: Props) => {
 
   return (
-    <div className="flex flex-col gap-7">
+    <div className="flex flex-col gap-7 ">
       <Header />
       <ATMEventMediaSynopsis
         imagePosition="left"
@@ -30,7 +30,7 @@ const Home = ({ glimpses }: Props) => {
         founderImage3={aboutus3}
       >
         <div className="flex flex-col gap-3">
-          <p className=" text-[16px] text-gray-500">
+          <p className=" text-[12px] sm:text-[16px]">
             Ladli Foundation is a leading grassroots-level non-profit
             organization known for implementing impactful & innovative social
             initiatives to provide equitable healthcare, education & life skills
@@ -40,7 +40,7 @@ const Home = ({ glimpses }: Props) => {
             Internship Program by leveraging the strength of over 1 Lac Youth
             Interns & Volunteers.
           </p>
-          <p className=" text-[16px] text-gray-500">
+          <p className=" text-[12px] sm:text-[16px] text-gray-500">
             With a resolute commitment to fostering change, we specialize in the
             effective implementation of routine immunization, prevention of
             communicable diseases and advancement of digital education &

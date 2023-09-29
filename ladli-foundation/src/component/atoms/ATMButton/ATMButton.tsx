@@ -33,7 +33,7 @@ const ATMButton = ({
           <button
             onClick={onClick}
             className={twMerge(
-              `text-white px-5 py-2  bg-[#EA248F] pulse rounded-full ${className}`
+              `text-white px-5 py-2  bg-[#EA248F] pulse rounded-full w-full ${className}`
             )}
           >
             {title}

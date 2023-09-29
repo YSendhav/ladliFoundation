@@ -4,17 +4,17 @@ import image003 from "./../../assests/images/images003.jpg";
 import ATMEventMediaSynopsis from "./ATMEventMediaSynopsis/ATMEventMediaSynopsis";
 import ATMEventSummery from "./ATMEventSummery/ATMEventSummery";
 import TestimonialCardWrapper from "../ui/TestimonialCard/TestimonialCardWrapper";
-import Header from "../ui/Header";
-import ATMOverlayCard from "./ATMOverlayCard/ATMOverlayCard";
+import FounderWrapper from "../../screens/Founder/FounderWrapper";
 type Props = {};
 
 const Test = (props: Props) => {
     return (
         <div className="">
-            <Header />
+            {/* <Header /> */}
+            <FounderWrapper />
             <TestimonialCardWrapper />
             <div className="mt-20">
-                <ATMEventSummery image1={image003} image2={image003}>
+                <ATMEventSummery image1={image003} image2={image003} imagePosition="left">
                     <div className=" text-[16px] text-gray-500 pt-1">
                         He has been honoured with two national award by the Government of
                         India and has been praised by four successive Presidents of India

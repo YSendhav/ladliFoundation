@@ -5,12 +5,14 @@ import ATMEventMediaSynopsis from "./ATMEventMediaSynopsis/ATMEventMediaSynopsis
 import ATMEventSummery from "./ATMEventSummery/ATMEventSummery";
 import TestimonialCardWrapper from "../ui/TestimonialCard/TestimonialCardWrapper";
 import FounderWrapper from "../../screens/Founder/FounderWrapper";
+import AdvisoryWrapper from "../../screens/Adversory/AdversoryWrapper";
 type Props = {};
 
 const Test = (props: Props) => {
     return (
         <div className="">
             {/* <Header /> */}
+            <AdvisoryWrapper/>
             <FounderWrapper />
             <TestimonialCardWrapper />
             <div className="mt-20">

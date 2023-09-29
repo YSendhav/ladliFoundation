@@ -1,6 +1,6 @@
 import React from 'react'
-import ATMOverlayCard from '../../component/atoms/ATMOverlayCard/ATMOverlayCard';
 import Header from '../../component/ui/Header';
+import ATMOverlayCard from '../../component/atoms/ATMOverlayCard/ATMOverlayCard';
 
 type Props = {
     advisoryImage: string;
@@ -15,24 +15,30 @@ type AdvisoryResponse = {
 
 const Advisory = ({ advisoryDetail }: AdvisoryResponse) => {
     return (
-        <div className='px-[100px]'>
-            <Header title='ADVISORY & EXPERT COUNCIL'/>
-            <div className='grid md:grid-cols-3 gap-8'>
-                {advisoryDetail?.map((advisory) => {
-                    return (
-                        <>
-                            <div>
-                                <ATMOverlayCard
-                                    name={advisory?.advisoryName}
-                                    image={advisory?.advisoryImage}
-                                    position={advisory?.advisoryPosition}
-                                    place={advisory?.advisoryPlace}
-                                    description={advisory?.advisoryDescription}
-                                />
-                            </div>
-                        </>
-                    )
-                })}
+        <div className='px-[150px]'>
+            <div className='flex flex-col gap-10'>
+                <div>
+                    {/* <Header title='ADVISORY & EXPERT COUNCIL' /> */}
+                </div>
+                <div className='grid md:grid-cols-3 gap-8'>
+                    {advisoryDetail?.map((advisory) => {
+                        return (
+                            <>
+                                <div>
+                                    <ATMOverlayCard
+                                        button={true}
+                                        name={advisory?.advisoryName}
+                                        image={advisory?.advisoryImage}
+                                        position={advisory?.advisoryPosition}
+                                        place={advisory?.advisoryPlace}
+                                        description={advisory?.advisoryDescription}
+                                    />
+                                </div>
+                            </>
+                        )
+                    })}
+                </div>
+
             </div>
         </div>
     )

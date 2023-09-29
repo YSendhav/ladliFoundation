@@ -7,7 +7,7 @@ type Props = {
 const ATMPageHeader = (props: Props) => {
     return (
         <div>
-            <h1 className='uppercase py-10 headerImage px-10 text-left text-[30px] sm:text-[50px] 
+            <h1 className='uppercase py-10 headerImage px-10 text-left md:text-[30px] sm:text-[50px]  text-[24px]
             font-normal text-white sm:px-[160px] sm:py-20 w-full h-full'>our founder</h1>
         </div>
     )

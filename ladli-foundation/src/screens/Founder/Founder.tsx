@@ -26,11 +26,11 @@ type founderResponse = {
 
 const Founder = ({ founderData, founderDataImage }: founderResponse) => {
     return (
-        <div className="lg:px-[150px] px-[50px]">
+        <div className="">
             <div>
-                <Header title="OUR FOUNDER" />
+                {/* <Header title="OUR FOUNDER" /> */}
             </div>
-            <div className="flex gap-4 p-10">
+            {/* <div className="flex gap-4 p-10">
                 {founderData?.map((founder) => {
                     return (
                         <div className="">
@@ -42,7 +42,7 @@ const Founder = ({ founderData, founderDataImage }: founderResponse) => {
                         </div>
                     );
                 })}
-            </div>
+            </div> */}
             {founderDataImage?.map((founder) => {
                 return (
                     <>

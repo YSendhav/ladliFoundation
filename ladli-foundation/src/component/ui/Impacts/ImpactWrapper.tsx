@@ -1,6 +1,5 @@
 import React from "react";
 import Impact from "./Impact";
-import Partners from "../partners/Partners";
 import PartnersWrapper from "../partners/PartnersWrapper";
 
 const impactData = [
@@ -70,7 +69,7 @@ const ImpactWrapper = () => {
   return (
     <div>
       <Impact impacts={impactData} />
-     <PartnersWrapper/>
+    
     </div>
   );
 };

@@ -20,7 +20,7 @@ const ATMAccordian: React.FC<AccordionProps> = ({ title, children,className ,tit
   return (
     <div
       className={`flex items-center w-full z-1000  ${
-        isOpenAccordian ? 'max-h-screen ' : 'max-h-6  overflow-hidden'
+        isOpenAccordian ? 'max-h-screen ' : 'max-h-10  overflow-hidden'
         
       }`}
       onMouseEnter={toggleAccordion}

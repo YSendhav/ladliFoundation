@@ -3,9 +3,9 @@ import { BsArrowRight } from "react-icons/bs";
 import image003 from "./../../assests/images/images003.jpg";
 import ATMEventMediaSynopsis from "./ATMEventMediaSynopsis/ATMEventMediaSynopsis";
 import ATMEventSummery from "./ATMEventSummery/ATMEventSummery";
-import TestimonialCardWrapper from "../ui/TestimonialCard/TestimonialCardWrapper";
 import Header from "../ui/Header";
 import ATMOverlayCard from "./ATMOverlayCard/ATMOverlayCard";
+import TestimonialCardWrapper from "../ui/TestimonialCard/TestimonialCardsWrapper";
 type Props = {};
 
 const Test = (props: Props) => {

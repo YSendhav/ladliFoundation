@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Test from '../component/atoms/Test';
-import ImpactWrapper from '../component/ui/Impacts/ImpactWrapper';
+import HomeWrapper from '../screens/HomeWrapper';
+import TestimonialCardWrapper from '../component/ui/TestimonialCard/TestimonialCardsWrapper';
 type Props = {}
 
 const PageRoute = (props: Props) => {
@@ -9,7 +9,8 @@ const PageRoute = (props: Props) => {
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path='/test' element={<ImpactWrapper />} />
+                    <Route path='/test' element={<TestimonialCardWrapper />} />
+                    <Route path="/" element={<HomeWrapper/>}/>
                 </Routes>
             </BrowserRouter>
         </>

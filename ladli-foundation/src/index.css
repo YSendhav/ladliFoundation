@@ -47,7 +47,23 @@ code {
 }
 @keyframes pulse-out {
   0% {
-    box-shadow: 0 0 0 0 #ef6eae;
+    box-shadow: 0 0 0 0 hsl(330, 11%, 86%);
+  }
+}
+.pulse-white {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out!important;
+  transform: scale(1)!important;
+  box-shadow: 5em 0 0.5em transparent!important;
+}
+.pulse-white:hover,
+.pulse-white:focus {
+  transform: scale(1.1)!important;
+  animation: pulse-in 0.5s ease-in-out!important;
+  box-shadow: 0 0 0 2em transparent!important
+}
+@keyframes pulse-in {
+  0% {
+    box-shadow: 0,0,0,0 white!important
   }
 }
 .margin-auto{
@@ -73,7 +89,7 @@ code {
   right: 0;
   background-image: linear-gradient(
     to right,
-    rgba(234, 36, 143, 0.9),
+    hsla(328, 61%, 63%, 0.9),
     rgba(117, 10, 66, 0.8)
   );
   margin-top: 30px;
@@ -84,4 +100,56 @@ code {
 }
 .main_container:hover .overlay {
   height: 96%;
+}
+.card__picture {
+  background-size: cover;
+  /* height: 10rem; */
+  background-blend-mode: screen;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+
+}
+.programCardImage{
+  background-image: linear-gradient(
+    to right,
+    hsla(328, 78%, 52%, 0.9),
+    rgba(226, 7, 120, 0.8)
+  );
+}
+.programCardImage-blue{
+  background-image: linear-gradient(
+    to right,
+    hsla(192, 67%, 57%, 0.9),
+    rgba(7, 127, 175, 0.8)
+  );
+}
+.testimonial-items {
+  display: flex; /* Display items in a row */
+  animation: slide testimonial-animation 20s linear infinite alternate; /* Adjust duration as needed */
+}
+
+/* Individual testimonial item */
+.testimonial-item {
+  flex: 0 0 100%; /* Set the width of each item to 100% of the container */
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-450%);
+  /* transform: translateX(0,0,0); */
+  }
+}
+
+/* Apply the animation to the carousel items */
+.carousel-item-1 {
+  animation: slide 120s linear infinite; /* Adjust the duration as needed */
+  width: 100%;
+  display: flex;
+}
+.owl-stage-outer {
+  overflow: visible !important;
 }

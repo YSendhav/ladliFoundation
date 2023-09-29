@@ -10,10 +10,10 @@ type Props = {
 const Header = ({ title }: Props) => {
   return (
     <div>
-      <nav className="bg-white text-black p-5 flex justify-between items-center">
+      <nav className="bg-white lg:visible invisible text-black p-5 flex justify-between items-center">
         <div><img src={logoImage} alt="logo" className='h-[5rem]' /></div>
         <div className="  flex items-center">
-          <ul className="flex gap-5  max-h-5 w-fit font-medium  items-center py-1">
+          <ul className="flex gap-1  max-h-7 w-fit font-medium  items-center py-1">
             <li><a href="/" className="hover:text-white hover:bg-[#EA248F] p-2 text-[14px] items-center flex">HOME</a></li>
             {/* ABOUT US  ---------------------------*/}
             <li>

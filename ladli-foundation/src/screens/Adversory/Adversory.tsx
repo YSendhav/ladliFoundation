@@ -15,10 +15,10 @@ type AdvisoryResponse = {
 
 const Advisory = ({ advisoryDetail }: AdvisoryResponse) => {
     return (
-        <div className='px-[150px]'>
+        <div className=''>
             <div className='flex flex-col gap-10'>
                 <div>
-                    {/* <Header title='ADVISORY & EXPERT COUNCIL' /> */}
+                    <Header title='ADVISORY & EXPERT COUNCIL' />
                 </div>
                 <div className='grid md:grid-cols-3 gap-8'>
                     {advisoryDetail?.map((advisory) => {

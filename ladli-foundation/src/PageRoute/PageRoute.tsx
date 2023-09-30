@@ -15,7 +15,7 @@ const PageRoute = (props: Props) => {
         <>
             <BrowserRouter>
                 <Routes>
-                    {/* <Route path='/test' element={<TestimonialCardWrapper />} /> */}
+       
                     <Route path="/" element={<HomeWrapper />} />
                     <Route path='/test' element={<Test />} />
                     <Route path='/founder' element={<FounderWrapper />} />

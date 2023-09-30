@@ -2,11 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-}
+
 body {
-  margin: 0;
+ 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -47,7 +45,23 @@ code {
 }
 @keyframes pulse-out {
   0% {
-    box-shadow: 0 0 0 0 #ef6eae;
+    box-shadow: 0 0 0 0 hsl(330, 11%, 86%);
+  }
+}
+.pulse-white {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out!important;
+  transform: scale(1)!important;
+  box-shadow: 5em 0 0.5em transparent!important;
+}
+.pulse-white:hover,
+.pulse-white:focus {
+  transform: scale(1.1)!important;
+  animation: pulse-in 0.5s ease-in-out!important;
+  box-shadow: 0 0 0 2em transparent!important
+}
+@keyframes pulse-in {
+  0% {
+    box-shadow: 0,0,0,0 white!important
   }
 }
 .margin-auto {
@@ -76,7 +90,7 @@ code {
   right: 0;
   background-image: linear-gradient(
     to right,
-    rgba(234, 36, 143, 0.9),
+    hsla(328, 61%, 63%, 0.9),
     rgba(117, 10, 66, 0.8)
   );
   overflow: hidden;
@@ -87,4 +101,93 @@ code {
 .main_container:hover .overlay {
   height: 97%;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 640px) and (min-width: 450px) {
+  .h-element {
+    height: 700px;
+    font-size: 50px;
+  }
+  .p-button {
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 100%;
+ 
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  /* styles for browsers larger than 960px; */
+}
+@media only screen and (min-width: 1440px) {
+  /* styles for browsers larger than 1440px; */
+}
+@media only screen and (min-width: 2000px) {
+  /* for sumo sized (mac) screens */
+}
+@media only screen and (max-device-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+}
+@media only screen and (device-width: 768px) {
+  /* default iPad screens */
+}
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* For landscape layouts only */
+}
+.card__picture {
+  background-size: cover;
+  /* height: 10rem; */
+  background-blend-mode: screen;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+
+}
+.programCardImage{
+  background-image: linear-gradient(
+    to right,
+    hsla(328, 78%, 52%, 0.9),
+    rgba(226, 7, 120, 0.8)
+  );
+}
+.programCardImage-blue{
+  background-image: linear-gradient(
+    to right,
+    hsla(192, 67%, 57%, 0.9),
+    rgba(7, 127, 175, 0.8)
+  );
+}
+.testimonial-items {
+  display: flex; /* Display items in a row */
+  animation: slide testimonial-animation 20s linear infinite alternate; /* Adjust duration as needed */
+}
+
+/* Individual testimonial item */
+.testimonial-item {
+  flex: 0 0 100%; /* Set the width of each item to 100% of the container */
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-450%);
+  /* transform: translateX(0,0,0); */
+  }
+}
+
+/* Apply the animation to the carousel items */
+.carousel-item-1 {
+  animation: slide 120s linear infinite; /* Adjust the duration as needed */
+  width: 100%;
+  display: flex;
+}
+.owl-stage-outer {
+  overflow: visible !important;
 }

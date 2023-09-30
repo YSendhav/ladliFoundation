@@ -3,7 +3,7 @@ import { BsArrowRight } from "react-icons/bs";
 import image003 from "./../../assests/images/images003.jpg";
 import ATMEventMediaSynopsis from "./ATMEventMediaSynopsis/ATMEventMediaSynopsis";
 import ATMEventSummery from "./ATMEventSummery/ATMEventSummery";
-import TestimonialCardWrapper from "../ui/TestimonialCard/TestimonialCardWrapper";
+import TestimonialCardWrapper from "../ui/TestimonialCard/TestimonialCardsWrapper";
 import FounderWrapper from "../../screens/Founder/FounderWrapper";
 import AdvisoryWrapper from "../../screens/Adversory/AdversoryWrapper";
 type Props = {};

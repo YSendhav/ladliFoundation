@@ -41,7 +41,7 @@ const Header = ({ title }: Props) => {
                 titleExtraClass="hover:text-white hover:bg-[#EA248F] p-2 font-medium text-[14px]"
               >
                 <ul className="flex  flex-col  py-3 px-1">
-                  <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"> <span className='text-[18px] font-medium'><MdPlayArrow /> </span> E-PATHANSHALA </a> </li>
+                  <li><a href="/e-pathanshala " className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"> <span className='text-[18px] font-medium'><MdPlayArrow /> </span> E-PATHANSHALA </a> </li>
                   <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"> <span className='text-[18px] font-medium'><MdPlayArrow /> </span> SOCIAL INTERNSHIP PROGRAMME </a> </li>
                   <li><a href="/shagun" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"> <span className='text-[18px] font-medium'><MdPlayArrow /> </span> SHAGUN </a> </li>
                   <li><a href="/project-josh" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"> <span className='text-[18px] font-medium'><MdPlayArrow /> </span>PROJECT JOSH  </a> </li>
@@ -119,7 +119,7 @@ const Header = ({ title }: Props) => {
         </div>
       </nav>
       {title &&
-        <h1 className='uppercase py-10 headerImage px-10 text-left text-[20px] sm:text-[30px]  md:text-[40px]
+        <h1 className='uppercase py-10 headerImage px-10 text-left text-[20px] sm:text-[30px]  md:text-[50px]
         font-normal text-white sm:px-[160px] sm:py-20 w-full h-full'>{title}</h1>}
 
     </div>

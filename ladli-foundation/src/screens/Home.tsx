@@ -29,7 +29,7 @@ const Home = ({ glimpses }: Props) => {
         founderImage2={aboutus2}
         founderImage3={aboutus3}
       >
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 ">
           <p className=" text-[12px] sm:text-[16px]">
             Ladli Foundation is a leading grassroots-level non-profit
             organization known for implementing impactful & innovative social

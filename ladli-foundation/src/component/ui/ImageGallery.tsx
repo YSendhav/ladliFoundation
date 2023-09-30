@@ -5,7 +5,7 @@ type ImageGalleryProps ={
   const ImageGallery: React.FC<ImageGalleryProps> = ({ imageUrls }) => {
    
   return (
-      <div className='w-full h-full flex flex-col gap-7 px-[50px]'>
+      <div className='w-full h-full flex flex-col gap-10 md:px-[50px] px-2'>
         <div className='flex justify-center'>
         <div className='font-bold text-[35px] inline-block text-center bg-gradient-to-r from-pink-500 to-teal-500 bg-clip-text text-transparent'>GLIMPSES</div>
         </div>
@@ -19,16 +19,16 @@ type ImageGalleryProps ={
                 </div>
               ))}
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-2'>
               {imageUrls.slice(1, 5).map((imageUrl, index) => (
                 <div key={index} >
-                  <img src={imageUrl} alt="" className=' border-4 border-green-5' />
+                  <img src={imageUrl} alt="" className='' />
                 </div>
               ))}
             </div>
           </div>
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-3'>
-            <div className='grid grid-cols-1 sm:grid-cols-2 gap-1'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-2'>
               {imageUrls.slice(5, 9).map((imageUrl, index) => (
                 <div key={index}>
                   <img src={imageUrl} alt="" className='w-full'/>

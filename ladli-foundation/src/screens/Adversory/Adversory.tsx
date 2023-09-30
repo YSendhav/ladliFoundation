@@ -21,7 +21,7 @@ const Advisory = ({ advisoryDetail }: AdvisoryResponse) => {
                 <div>
                     <Header title="ADVISORY & EXPERT COUNCIL" />
                 </div>
-                <div className="p-6 sm:px-20 md:px-16 lg:px-32">
+                <div className="p-6 sm:px-20 md:px-24 lg:px-32">
                     <div className="grid md:grid-cols-3 gap-6 ">
                         {advisoryDetail?.map((advisory) => {
                             return (

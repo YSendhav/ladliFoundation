@@ -23,10 +23,10 @@ const Header = ({ title }: Props) => {
                 titleExtraClass="hover:text-white hover:bg-[#EA248F] p-2 font-medium text-[14px]"
               >
                 <ul className="flex  flex-col  p-3">
-                  <li ><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> OUR FOUNDER </a></li>
-                  <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> ABOUT US </a></li>
-                  <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> ADVISORY & EXPERT COUNCIL </a></li>
-                  <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> EXECUTIVE TEAM  </a></li>
+                  <li ><a href="/founder" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> OUR FOUNDER </a></li>
+                  <li><a href="/about-us" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> ABOUT US </a></li>
+                  <li><a href="/advisory" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> ADVISORY & EXPERT COUNCIL </a></li>
+                  <li><a href="/executive-team" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> EXECUTIVE TEAM  </a></li>
                   <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> EXECUTIVE TEAM </a></li>
                   <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> OUR PRESENCE </a></li>
                   <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> THEMATIC AREAS </a></li>
@@ -119,8 +119,8 @@ const Header = ({ title }: Props) => {
         </div>
       </nav>
       {title &&
-        <h1 className='uppercase py-10 headerImage px-10 text-left text-[30px] sm:text-[50px] 
-            font-normal text-white sm:px-[160px] sm:py-20 w-full h-full'>{title}</h1>}
+        <h1 className='uppercase py-10 headerImage px-10 text-left text-[20px] sm:text-[30px]  md:text-[40px]
+        font-normal text-white sm:px-[160px] sm:py-20 w-full h-full'>{title}</h1>}
 
     </div>
   )

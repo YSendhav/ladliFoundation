@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
- 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -49,19 +47,19 @@ code {
   }
 }
 .pulse-white {
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out!important;
-  transform: scale(1)!important;
-  box-shadow: 5em 0 0.5em transparent!important;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+  transform: scale(1) !important;
+  box-shadow: 5em 0 0.5em transparent !important;
 }
 .pulse-white:hover,
 .pulse-white:focus {
-  transform: scale(1.1)!important;
-  animation: pulse-in 0.5s ease-in-out!important;
-  box-shadow: 0 0 0 2em transparent!important
+  transform: scale(1.1) !important;
+  animation: pulse-in 0.5s ease-in-out !important;
+  box-shadow: 0 0 0 2em transparent !important;
 }
 @keyframes pulse-in {
   0% {
-    box-shadow: 0,0,0,0 white!important
+    box-shadow: 0, 0, 0, 0 white !important;
   }
 }
 .margin-auto {
@@ -88,15 +86,10 @@ code {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: linear-gradient(
-    to right,
-    hsla(328, 61%, 63%, 0.9),
-    rgba(117, 10, 66, 0.8)
-  );
+  background-image: linear-gradient(to bottom, #ea248f, rgba(117, 10, 66, 0.9));
   overflow: hidden;
   height: 0;
   transition: 0.75s ease;
-  opacity: 5px;
 }
 .main_container:hover .overlay {
   height: 97%;
@@ -112,7 +105,6 @@ code {
     padding-left: 80px;
     padding-right: 80px;
     width: 100%;
- 
   }
 }
 
@@ -147,16 +139,15 @@ code {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-
 }
-.programCardImage{
+.programCardImage {
   background-image: linear-gradient(
     to right,
     hsla(328, 78%, 52%, 0.9),
     rgba(226, 7, 120, 0.8)
   );
 }
-.programCardImage-blue{
+.programCardImage-blue {
   background-image: linear-gradient(
     to right,
     hsla(192, 67%, 57%, 0.9),
@@ -178,7 +169,7 @@ code {
   }
   100% {
     transform: translateX(-450%);
-  /* transform: translateX(0,0,0); */
+    /* transform: translateX(0,0,0); */
   }
 }
 
@@ -190,4 +181,27 @@ code {
 }
 .owl-stage-outer {
   overflow: visible !important;
+}
+/* //founder image css */
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #ea248f, #32cce0);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+}
+.section-founder {
+  background-image: linear-gradient(
+      to right,
+      rgba(64, 84, 146, 0.84),
+      rgba(50, 204, 224, 0.84)
+    ),
+    url("./assests/images//founderImages/section-quote-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }

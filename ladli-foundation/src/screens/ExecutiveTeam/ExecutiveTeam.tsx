@@ -1,6 +1,7 @@
 import React from 'react'
 import ATMOverlayCard from '../../component/atoms/ATMOverlayCard/ATMOverlayCard';
 import Header from '../../component/ui/Header';
+import Footer from '../../component/ui/Footer';
 
 type Props = {
   teamImage: string;
@@ -18,7 +19,8 @@ const ExecutiveTeam = ({ executiveData }: ExecutiveProps) => {
       <div>
         <Header title='ADVISORY & EXPERT COUNCIL' />
       </div>
-      <div className='grid md:grid-cols-3 gap-4'>
+      <div className='p-6 sm:px-20 md:px-16 lg:px-32'>
+      <div className='grid md:grid-cols-3 gap-6'>
         {executiveData.map((executive) => {
           return (
             <>
@@ -34,6 +36,10 @@ const ExecutiveTeam = ({ executiveData }: ExecutiveProps) => {
             </>
           )
         })}
+      </div>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   )

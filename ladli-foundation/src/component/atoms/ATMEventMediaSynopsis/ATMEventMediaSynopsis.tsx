@@ -28,7 +28,7 @@ const ATMEventMediaSynopsis = ({
             )}
             {imagePosition === "left" ? (
                 <div>
-                    <div className={`grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-0`}>
+                    <div className={`grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-0 `}>
                         <div className="font-lato font-normal leading-7 text-gray-700 text-justify">
                             {" "}
                             {children}
@@ -72,7 +72,7 @@ const ATMEventMediaSynopsis = ({
             ) : (
                 <div>
                     <div className={`grid grid-cols-1 md:grid-cols-2 `}>
-                        <div className={`relative flex-col justify-center items-center`}>
+                        <div className={`relative flex-col justify-center items-center `}>
                             <img
                                 src={founderImage1}
                                 alt="#"

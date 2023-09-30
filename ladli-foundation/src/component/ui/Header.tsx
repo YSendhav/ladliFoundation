@@ -119,7 +119,7 @@ const Header = ({ title }: Props) => {
         </div>
       </nav>
       {title &&
-        <h1 className='uppercase py-10 headerImage px-10 text-left text-[20px] sm:text-[30px]  md:text-[40px]
+        <h1 className='uppercase py-10 headerImage px-10 text-left text-[20px] sm:text-[30px]  md:text-[50px]
         font-normal text-white sm:px-[160px] sm:py-20 w-full h-full'>{title}</h1>}
 
     </div>

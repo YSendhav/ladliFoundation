@@ -10,6 +10,7 @@ import PressMediaWrapper from "../screens/PressMedia/PressMediaWrapper";
 import OurPresence from "../screens/ourPresence/OurPresence";
 import Pathansala from "../screens/E-Pathansala/Pathansala";
 import InternshipProgram from "../screens/InternshipProgram/InternshipProgram";
+import MRite from "../screens/M-Rite/MRite";
 type Props = {};
 
 const PageRoute = (props: Props) => {
@@ -28,6 +29,7 @@ const PageRoute = (props: Props) => {
           <Route path="/our-presence" element={<OurPresence />} />
           <Route path="/e-pathanshala" element={<Pathansala />} />
           <Route path="/social-internship" element={<InternshipProgram />} />
+          <Route path="/m-rite" element={<MRite/>} />
         </Routes>
       </BrowserRouter>
     </>

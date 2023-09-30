@@ -36,9 +36,9 @@ const Pathansala = (props: Props) => {
   return (
     <>
       <Header title="E-PATHANSHALA" />
-      <div className="">
+      <div className="py-10 p-4 sm:px-20 md:px-24 lg:px-32">
 
-        <div className="py-10 p-4 sm:px-20 md:px-24 lg:px-32">
+        <div className="">
           <ATMEventMediaSynopsis
             founderImage1={Image01}
             founderImage2={Image02}

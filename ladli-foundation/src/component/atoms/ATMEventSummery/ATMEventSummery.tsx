@@ -1,8 +1,8 @@
 import React from 'react'
 type Props = {
     children: React.ReactNode
-    image1: string;
-    image2: string;
+    image1?: string;
+    image2?: string;
     imagePosition: "left" | "right";
 }
 
@@ -17,7 +17,7 @@ const ATMEventSummery = ({ children, image2, image1, imagePosition, }: Props) =>
                         </div>
                         <div className='flex flex-col gap-10 '>
                             <img src={image1} alt="#" className='shadow-2xl  p-4' />
-                            <img src={image2} alt="#" className='shadow-2xl bg-white p-4' />
+                        {image2 &&  <img src={image2} alt="#" className='shadow-2xl bg-white p-4' />}
                         </div>
                     </div>
                 ) : (

@@ -12,6 +12,7 @@ import ThematicAreaWrapper from '../screens/ThematicArea/ThematicAreaWrapper';
 import Shagun from '../screens/shagun/Shagun';
 import ProjectJosh from '../screens/ProjectJosh/ProjectJosh';
 import RahatSeva from '../screens/rahatSeva/RahatSeva';
+import Saheli from '../screens/saheli/Saheli';
 type Props = {}
 
 const PageRoute = (props: Props) => {
@@ -32,6 +33,7 @@ const PageRoute = (props: Props) => {
                     <Route path='/shagun' element={<Shagun/>} />
                     <Route path='/project-josh' element={<ProjectJosh/>} />
                     <Route path='/rahat-seva' element={<RahatSeva/>} />
+                    <Route path='/saheli' element={<Saheli/>} />
                     
                 </Routes>
             </BrowserRouter>

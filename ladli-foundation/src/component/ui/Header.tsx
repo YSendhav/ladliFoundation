@@ -9,8 +9,8 @@ type Props = {
 
 const Header = ({ title }: Props) => {
   return (
-    <div>
-      <nav className="bg-white lg:visible invisible text-black p-5 flex justify-between items-center">
+    <div className=''>
+      <nav className="bg-white text-black  show-header  p-5 flex justify-between items-center">
         <div><img src={logoImage} alt="logo" className='h-[5rem]' /></div>
         <div className="  flex items-center">
           <ul className="flex gap-1  max-h-7 w-fit font-medium  items-center py-1">
@@ -28,7 +28,7 @@ const Header = ({ title }: Props) => {
                   <li><a href="/advisory" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> ADVISORY & EXPERT COUNCIL </a></li>
                   <li><a href="/executive-team" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> EXECUTIVE TEAM  </a></li>
                   <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> EXECUTIVE TEAM </a></li>
-                  <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> OUR PRESENCE </a></li>
+                  <li><a href="/our-presence" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> OUR PRESENCE </a></li>
                   <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> THEMATIC AREAS </a></li>
                 </ul>
               </ATMAccordian>
@@ -104,8 +104,8 @@ const Header = ({ title }: Props) => {
                 titleExtraClass="hover:text-white hover:bg-[#EA248F] p-2 font-medium text-[14px]"
               >
                 <ul className="flex  flex-col  py-3 px-1">
-                  <li className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span>VIDEO GALLERY</li>
-                  <li className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span>PRESS AND MEDIA</li>
+                <li><a href="/video-gallery" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span>VIDEO GALLERY</a> </li>
+                  <li><a href="/press" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span>PRESS AND MEDIA</a> </li>
                 </ul>
               </ATMAccordian>
             </li>

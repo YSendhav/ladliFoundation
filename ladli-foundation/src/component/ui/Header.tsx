@@ -29,7 +29,7 @@ const Header = ({ title }: Props) => {
                   <li><a href="/executive-team" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> EXECUTIVE TEAM  </a></li>
                   <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> EXECUTIVE TEAM </a></li>
                   <li><a href="/our-presence" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> OUR PRESENCE </a></li>
-                  <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> THEMATIC AREAS </a></li>
+                  <li><a href="/thematic-areas" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> THEMATIC AREAS </a></li>
                 </ul>
               </ATMAccordian>
             </li>

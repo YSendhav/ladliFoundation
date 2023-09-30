@@ -41,7 +41,7 @@ const Header = ({ title }: Props) => {
                 titleExtraClass="hover:text-white hover:bg-[#EA248F] p-2 font-medium text-[14px]"
               >
                 <ul className="flex  flex-col  py-3 px-1">
-                  <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"> <span className='text-[18px] font-medium'><MdPlayArrow /> </span> E-PATHANSHALA </a> </li>
+                  <li><a href="/e-pathanshala " className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"> <span className='text-[18px] font-medium'><MdPlayArrow /> </span> E-PATHANSHALA </a> </li>
                   <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"> <span className='text-[18px] font-medium'><MdPlayArrow /> </span> SOCIAL INTERNSHIP PROGRAMME </a> </li>
                   <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"> <span className='text-[18px] font-medium'><MdPlayArrow /> </span> SHAGUN </a> </li>
                   <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"> <span className='text-[18px] font-medium'><MdPlayArrow /> </span>PROJECT JOSH  </a> </li>

@@ -4,9 +4,9 @@ interface Props {
     children?: ReactNode;
     title?: string;
     imagePosition: "left" | "right";
-    founderImage1: string;
-    founderImage2: string;
-    founderImage3: string;
+    founderImage1?: string;
+    founderImage2?: string;
+    founderImage3?: string;
 }
 
 const ATMEventMediaSynopsis = ({
@@ -33,8 +33,9 @@ const ATMEventMediaSynopsis = ({
                             {" "}
                             {children}
                         </div>
-                        <div
-                            className={`relative flex-col justify-center items-center lg:ml-10 `}
+                    {founderImage1 &&founderImage2&& founderImage3 && (
+                            <div
+                            className={`relative flex-col justify-center items-center lg:ml-10 p-4 `}
                         >
                             <img
                                 src={founderImage1}
@@ -67,6 +68,7 @@ const ATMEventMediaSynopsis = ({
                                 lg:top-[100px] lg:max-w-[330px] "
                             />
                         </div>
+                    )}
                     </div>
                 </div>
             ) : (

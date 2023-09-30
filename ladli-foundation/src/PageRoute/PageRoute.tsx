@@ -9,6 +9,7 @@ import VideoGalleryWrapper from '../screens/videoGallery/VideoGalleryWrapper';
 import PressMediaWrapper from '../screens/PressMedia/PressMediaWrapper';
 import OurPresence from '../screens/ourPresence/OurPresence';
 import ThematicAreaWrapper from '../screens/ThematicArea/ThematicAreaWrapper';
+import Shagun from '../screens/shagun/Shagun';
 type Props = {}
 
 const PageRoute = (props: Props) => {
@@ -26,7 +27,8 @@ const PageRoute = (props: Props) => {
                     <Route path='/press' element={<PressMediaWrapper />} />
                     <Route path='/our-presence' element={<OurPresence />} />
                     <Route path='/thematic-areas' element={<ThematicAreaWrapper/>} />
-
+                    <Route path='/shagun' element={<Shagun/>} />
+                    
                 </Routes>
             </BrowserRouter>
         </>

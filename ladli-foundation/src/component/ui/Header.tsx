@@ -27,7 +27,7 @@ const Header = ({ title }: Props) => {
                   <li><a href="/about-us" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> ABOUT US </a></li>
                   <li><a href="/advisory" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> ADVISORY & EXPERT COUNCIL </a></li>
                   <li><a href="/executive-team" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> EXECUTIVE TEAM  </a></li>
-                  <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> EXECUTIVE TEAM </a></li>
+                  <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> OUR EXPERTISE</a></li>
                   <li><a href="/our-presence" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> OUR PRESENCE </a></li>
                   <li><a href="/thematic-areas" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"><span className='text-[18px] font-medium'><MdPlayArrow /> </span> THEMATIC AREAS </a></li>
                 </ul>
@@ -43,7 +43,7 @@ const Header = ({ title }: Props) => {
                 <ul className="flex  flex-col  py-3 px-1">
                   <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"> <span className='text-[18px] font-medium'><MdPlayArrow /> </span> E-PATHANSHALA </a> </li>
                   <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"> <span className='text-[18px] font-medium'><MdPlayArrow /> </span> SOCIAL INTERNSHIP PROGRAMME </a> </li>
-                  <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"> <span className='text-[18px] font-medium'><MdPlayArrow /> </span> SHAGUN </a> </li>
+                  <li><a href="/shagun" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"> <span className='text-[18px] font-medium'><MdPlayArrow /> </span> SHAGUN </a> </li>
                   <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"> <span className='text-[18px] font-medium'><MdPlayArrow /> </span>PROJECT JOSH  </a> </li>
                   <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"> <span className='text-[18px] font-medium'><MdPlayArrow /> </span> RAHAT SEVA </a> </li>
                   <li><a href="/" className="hover:text-white hover:bg-[#EA248F]  py-[6px] items-center flex gap-3"> <span className='text-[18px] font-medium'><MdPlayArrow /> </span> M-RITE </a> </li>

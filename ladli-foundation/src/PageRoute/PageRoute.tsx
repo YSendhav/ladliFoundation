@@ -11,6 +11,7 @@ import OurPresence from '../screens/ourPresence/OurPresence';
 import ThematicAreaWrapper from '../screens/ThematicArea/ThematicAreaWrapper';
 import Shagun from '../screens/shagun/Shagun';
 import ProjectJosh from '../screens/ProjectJosh/ProjectJosh';
+import RahatSeva from '../screens/rahatSeva/RahatSeva';
 type Props = {}
 
 const PageRoute = (props: Props) => {
@@ -30,6 +31,7 @@ const PageRoute = (props: Props) => {
                     <Route path='/thematic-areas' element={<ThematicAreaWrapper/>} />
                     <Route path='/shagun' element={<Shagun/>} />
                     <Route path='/project-josh' element={<ProjectJosh/>} />
+                    <Route path='/rahat-seva' element={<RahatSeva/>} />
                     
                 </Routes>
             </BrowserRouter>

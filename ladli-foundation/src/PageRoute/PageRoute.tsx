@@ -5,6 +5,9 @@ import TestimonialCardWrapper from '../component/ui/TestimonialCard/TestimonialC
 import Test from '../component/atoms/Test';
 import FounderWrapper from '../screens/Founder/FounderWrapper';
 import AdversoryWrapper from '../screens/Adversory/AdversoryWrapper';
+import VideoGalleryWrapper from '../screens/videoGallery/VideoGalleryWrapper';
+import PressMediaWrapper from '../screens/PressMedia/PressMediaWrapper';
+import OurPresence from '../screens/ourPresence/OurPresence';
 type Props = {}
 
 const PageRoute = (props: Props) => {
@@ -17,6 +20,9 @@ const PageRoute = (props: Props) => {
                     <Route path='/test' element={<Test />} />
                     <Route path='/founder' element={<FounderWrapper />} />
                     <Route path='/advisory' element={<AdversoryWrapper />} />
+                    <Route path='/video-gallery' element={<VideoGalleryWrapper />} />
+                    <Route path='/press' element={<PressMediaWrapper />} />
+                    <Route path='/our-presence' element={<OurPresence />} />
                 </Routes>
             </BrowserRouter>
         </>

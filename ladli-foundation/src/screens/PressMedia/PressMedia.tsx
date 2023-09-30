@@ -1,33 +1,36 @@
 import React from 'react'
-import VideoGalleryCard from '../../component/molecule/VideoGalleryCard'
 import Header from '../../component/ui/Header'
 import Footer from '../../component/ui/Footer'
+import PrintMediaGallery from '../../component/molecule/PrintMediaGallery'
 
 type VideoGallleryTypes ={
-  videoUrl: string
+  imageUrl: string
+  link:string
   title: string
   date: string
-  trust: string
+  media: string
+ 
 }
 
 type Props = {
-  videoGallery:VideoGallleryTypes[]
+  pressGallery:VideoGallleryTypes[]
 }
 
-const VideoGallery = ({videoGallery}: Props) => {
+const PressMedia = ({pressGallery}: Props) => {
   return (
     <div className='flex flex-col gap-5'>
       <Header
-      title='VIDEO GALLERY'
+      title='LADLI IN MEDIA'
       />
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-10 gap-10 md:px-[130px] '>
-{videoGallery?.map((video)=>{
+{pressGallery?.map((image)=>{
   return <>
-  <VideoGalleryCard
-  videoUrl={video?.videoUrl}
-  title={video?.title}
-  trust={video?.trust}
-  date={video?.date}
+  <PrintMediaGallery
+ link={image?.link}
+  imageUrl={image?.imageUrl}
+  title={image?.title}
+  media={image?.media}
+  date={image?.date}
   />
   </>
 })}
@@ -37,4 +40,4 @@ const VideoGallery = ({videoGallery}: Props) => {
   )
 }
 
-export default VideoGallery
+export default PressMedia

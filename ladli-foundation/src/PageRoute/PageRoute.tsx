@@ -16,6 +16,7 @@ import Pathansala from "../screens/E-Pathansala/Pathansala";
 import InternshipProgram from "../screens/InternshipProgram/InternshipProgram";
 import MRite from "../screens/M-Rite/MRite";
 import Saheli from "../screens/saheli/Saheli";
+import Sashakt from "../screens/sashakt/Sashakt";
 type Props = {};
 
 const PageRoute = (props: Props) => {
@@ -39,6 +40,7 @@ return (
           <Route path="/social-internship" element={<InternshipProgram />} />
           <Route path="/m-rite" element={<MRite />} />
           <Route path='/saheli' element={<Saheli/>} />
+          <Route path='/sashakt' element={<Sashakt/>} />
         </Routes>
       </BrowserRouter>
     </>

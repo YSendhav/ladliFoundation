@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
- import HomeWrapper from "../screens/HomeWrapper";
+import HomeWrapper from "../screens/HomeWrapper";
 import Test from "../component/atoms/Test";
 import FounderWrapper from "../screens/Founder/FounderWrapper";
 import AdversoryWrapper from "../screens/Adversory/AdversoryWrapper";
@@ -14,11 +14,13 @@ import ProjectJosh from "../screens/ProjectJosh/ProjectJosh";
 import RahatSeva from "../screens/rahatSeva/RahatSeva";
 import Pathansala from "../screens/E-Pathansala/Pathansala";
 import InternshipProgram from "../screens/InternshipProgram/InternshipProgram";
+
+import PunarUthan from "../screens/PunarUthan/PunarUthan";
 import MRite from "../screens/M-Rite/MRite";
 type Props = {};
 
 const PageRoute = (props: Props) => {
-   return (
+  return (
     <>
       <BrowserRouter>
         <Routes>
@@ -37,6 +39,7 @@ const PageRoute = (props: Props) => {
           <Route path="/e-pathanshala" element={<Pathansala />} />
           <Route path="/social-internship" element={<InternshipProgram />} />
           <Route path="/m-rite" element={<MRite />} />
+          <Route path="/punar-uthaan" element={<PunarUthan />} />
         </Routes>
       </BrowserRouter>
     </>
